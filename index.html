@@ -7,224 +7,40 @@
         /* Global Styles */
         body { 
             font-family: 'Courier New', Courier, monospace; 
-            max-width: 900px; 
-            margin: 0 auto; 
-            padding: 40px; 
-            line-height: 1.6; 
-            color: #ffffff;            
+            margin: 0; 
+            padding: 0; 
+            color: #ffffff;             
             background-color: #000000; 
         }
         
-        h1 { 
-            text-align: center; 
-            font-size: 2.5em; 
-            margin-bottom: 10px; 
-            text-transform: uppercase; 
-            color: #ffffff; 
+        /* The incubation screen style */
+        .obscurity-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
         }
 
-        .subtitle { 
-            text-align: center; 
-            margin-bottom: 50px; 
-            color: #888888; 
-        }
-
-        h2 { 
-            border-bottom: 2px solid #ffffff; 
-            padding-bottom: 10px; 
-            margin-top: 60px; 
-            text-transform: uppercase; 
-            letter-spacing: 2px; 
-            color: #ffffff; 
-        }
+        /* Styles for your hidden work (preserved for later) */
+        .hidden-content { display: none; }
         
-        .book-container { 
-            display: flex; 
-            gap: 30px; 
-            background: white; 
-            padding: 25px; 
-            border: 1px solid #444; 
-            align-items: flex-start; 
-            margin-bottom: 30px; 
-            color: #000000;    
-        }
-
+        h1 { text-align: center; font-size: 2.5em; text-transform: uppercase; color: #ffffff; }
+        .subtitle { text-align: center; color: #888888; }
+        h2 { border-bottom: 2px solid #ffffff; padding-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; color: #ffffff; }
+        .book-container { display: flex; gap: 30px; background: white; padding: 25px; border: 1px solid #444; align-items: flex-start; color: #000000; }
         .book-cover { flex: 0 0 220px; text-align: center; }
-        .book-cover img { width: 100%; border: 1px solid #000; transition: transform 0.2s; cursor: pointer; }
-        .book-cover img:hover { transform: scale(1.02); }
-
+        .book-cover img { width: 100%; border: 1px solid #000; }
         .book-info { flex: 1; }
-        
-        .book-title { 
-            font-size: 1.8em; 
-            font-weight: bold; 
-            margin: 0; 
-            color: #000000; 
-            text-decoration: underline; 
-        }
-
-        .blurb { 
-            font-size: 1em; 
-            margin-top: 15px; 
-            text-align: left; 
-            color: #000000; 
-        }
-
-        .download-btn { 
-            display: inline-block; 
-            margin-top: 20px; 
-            padding: 10px 20px; 
-            background: #000; 
-            color: white; 
-            text-decoration: none; 
-            font-size: 0.9em; 
-            font-weight: bold; 
-        }
-        .download-btn:hover { background: #444; }
-
-        .epigraph-mystery {
-            font-size: 1em;
-            font-style: italic;
-            margin-top: 25px;
-            margin-bottom: 10px;
-            color: #000;
-            line-height: 1.4;
-        }
+        .book-title { font-size: 1.8em; font-weight: bold; color: #000000; text-decoration: underline; }
+        .blurb { font-size: 1em; margin-top: 15px; color: #000000; }
+        .download-btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #000; color: white; text-decoration: none; font-size: 0.9em; font-weight: bold; }
+        .epigraph-mystery { font-size: 1em; font-style: italic; color: #000; }
     </style>
-    <script>
-        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-        ml('account', '1982367');
-    </script>
 </head>
 <body>
 
-    <h1>Adrien Carver</h1>
-    <p class="subtitle">i'm a real nice guy</p>
-
-    <h2>Novels/Novellas</h2>
-    <div class="book-container">
-        <div class="book-cover">
-                <img src="Gloryland-original.jpg" alt="Gloryland Cover">
-        </div>
-        <div class="book-info">
-            <p class="book-title">Gloryland</p>
-            <div class="blurb">
-                In the long ago summer of 2010, Evan Barker’s life is shit. His older brother, Jason, has taken his own life, leaving behind a family shattered by grief. His parents are buckling under the weight of the Great Recession, his so-called friends are aimless, drunken douchebags, and his younger sister has been institutionalized after discovering Jason’s body.<br><br>
-                In a desperate leap for meaning and change, Evan decides to audition for American Idol in Nashville. Never mind that he hasn’t ever sung a note in his life.<br><br>
-                Joining him on this reckless, possibly absurd trip is Lily Trent, a childhood acquaintance turned unexpected companion. A newly minted dancer at Deja Blue, Lily is just as lost as Evan, harboring her own secret demons and motivations. She’s also more than aware of the massive crush the hapless, virginal Evan has developed on her.<br><br>
-                What starts as a desperate bid for stardom and relevance morphs into something else-- a search for meaning, connection, and self-worth in a generation raised on shoddy promises. 
-            </div>
-            <a href="glorylandpreview.pdf" download class="download-btn">Download Preview</a>
-        </div>
+    <div class="obscurity-screen">
+        <p>see you soon.</p>
     </div>
-
-    <div class="book-container">
-        <div class="book-cover">
-                <img src="thehighdriver.jpg" alt="The High Driver Cover">
-        </div>
-        <div class="book-info">
-            <p class="book-title">The High Driver</p>
-            <div class="blurb">
-                Johnny Clee was a redneck child who grew up to be a solitary drug mule for the opioid crisis. Now he's dead-- though he can't remember how it happened-- and he's got another job working for The Devil and Death.<br><br>
-                Johnny assumes collecting the souls of the damned will free him from the highways of purgatory, but salvation isn't the only thing waiting for him at the end of the road.
-            </div>
-            <a href="thehighdriverpreview.pdf" download class="download-btn">Download Preview</a>
-        </div>
-    </div>
-
-    <div class="book-container">
-        <div class="book-cover">
-                <img src="emo.jpg" alt="Emo Cover">
-        </div>
-        <div class="book-info">
-            <p class="book-title">Emo</p>
-            <div class="blurb">
-                It's 2088 and Elizabeth London is turning 100. Time to go to the Epicity to get retired aka medically euthanized via nitrogen asphyxiation. She’s aided by her Emotionally-Minded Omnibot, an AI hospice nurse. On the way down, she listens to an old mix CD-- a parting gift from her first boyfriend in the fall of 2006.<br><br>
-                The songs activate memories long forgotten, and Elizabeth relives moments from her first week at college as she makes her final journey through the fantastical dystopian underground humanity has built for itself in the wake of catastrophic climate change. 
-            </div>
-            <a href="emopreview.pdf" download class="download-btn">Download Preview</a>
-        </div>
-    </div>
-
-    <h2>Short Stories</h2>
-    <div class="book-container">
-        <div class="book-cover">
-                <img src="Beast with a Billion Eyes.jpg" alt="Beast with a Billion Eyes Cover">
-        </div>
-        <div class="book-info">
-            <p class="book-title">Beast with a Billion Eyes</p>
-            <div class="blurb">
-                A writer wishes to be a genius. A dog learns to speak. A boy tormented by bullies picks a flower near an old well. A young girl with green skin is found in a drainpipe outside Pittsburgh. A child cannibal writes a confessional. A lake monster is secretly fed by park staff.<br><br>
-                Stories of dread, wonder, and whimsy.
-            </div>
-            <a href="beastwithabillioneyespreview.pdf" download class="download-btn">Download Preview</a>
-        </div>
-    </div>
-
-    <div class="book-container">
-        <div class="book-cover">
-                <img src="Reliable Consumer Profiles.jpg" alt="Reliable Consumer Profiles Cover">
-        </div>
-        <div class="book-info">
-            <p class="book-title">Reliable Consumer Profiles</p>
-            <div class="blurb">
-                A young man is fired from his job. A waitress develops a crush on a regular. A boy is asked to destroy a hard drive. Another boy jumps off a roof to impress his friends. A man abducts a young woman. A low-level podcast studio employee gets a moment alone with a presidential candidate.<br><br>
-                Stories of hope, humor, and heartache in the empire of modern capitalism.
-            </div>
-            <a href="reliableconsumerprofilespreview.pdf" download class="download-btn">Download Preview</a>
-        </div>
-    </div>
-
-    <h2>Poetry</h2>
-    <div class="book-container">
-        <div class="book-cover">
-                <img src="stumblingthroughoblivion.jpg" alt="Stumbling Through Oblivion Cover">
-        </div>
-        <div class="book-info">
-            <p class="book-title">Stumbling Through Oblivion</p>
-            <div class="blurb">
-                Poetry — 2005-2023
-            </div>
-            <a href="Stumbling Through Oblivion.pdf" download class="download-btn">Download</a>
-        </div>
-    </div>
-
-    <div class="book-container">
-        <div class="book-cover">
-                <img src="Statement of intent(1).jpg" alt="Statement of Intent Cover">
-        </div>
-        <div class="book-info">
-            <p class="book-title">Statement of Intent</p>
-            <div class="blurb">
-                Poetry — 2023-2025
-            </div>
-            <a href="statement of intent.pdf" download class="download-btn">Download</a>
-        </div>
-    </div>
-
-    <div class="book-container">
-        <div class="book-cover">
-                <img src="out i go into the night.jpg" alt="Out I Go Into the Night Cover">
-        </div>
-        <div class="book-info">
-            <p class="book-title">Out I Go Into the Night</p>
-            <div class="epigraph-mystery">
-                "It’s better to be hated for what you are than loved for what you’re not. - Andre Gide"
-            </div>
-            <a href="out i go into the night.pdf" download class="download-btn">Download</a>
-        </div>
-    </div>
-<p style="margin-top: 50px;">
-    <a href="mailto:therealadriencarver@gmail.com" style="color: white; text-decoration: none; border-bottom: 1px dotted grey;">
-        [ contact ]
-    </a>
-</p>
-
-    <footer style="text-align: center; padding: 40px; font-family: 'Courier New', Courier, monospace; font-size: 0.8em; color: #666;">
-        <p>&copy; 2026 Adrien Carver. All rights reserved.</p>
-    </footer>
-</body>
-</html>
